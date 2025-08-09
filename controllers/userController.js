@@ -26,7 +26,6 @@ export function createuser(req,res){
     })
 
 
-
 }
 
  export function loginUser(req,res){
