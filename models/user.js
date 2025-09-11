@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
     },
     role : {
         type : String,
-        default : "User"
+        default : "Admin"
     },
     isEmailverified : {
         type : Boolean,

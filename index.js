@@ -1,8 +1,8 @@
 import express from "express";
 import  mongoose from "mongoose";
 import bodyParser from "body-parser";
-import studentRouter from "./routers/studentRouter.js";
 import userRouter from "./routers/userRouter.js";
+import productRouter from "./routers/productRouter.js";
 import jwt from "jsonwebtoken";
 
 
@@ -37,7 +37,7 @@ app.use(
 
 
 
-const connenctionString ="mongodb+srv://admin:123@cluster0.0bkifia.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const connenctionString ="mongodb+srv://senirusennath_db_user:2006@cluster0.mpmawcd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 mongoose.connect(connenctionString).then(
     ()=>{
@@ -50,10 +50,9 @@ mongoose.connect(connenctionString).then(
 )
 
 
-app.use("/students",studentRouter)
+
 app.use("/users",userRouter)
-
-
+app.use("/products",productRouter)
 
 
 app.listen( 5000, 
