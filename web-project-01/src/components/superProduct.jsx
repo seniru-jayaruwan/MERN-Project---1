@@ -3,6 +3,7 @@ export default function SuperProduct() {
 
     return (
         <div>
+            <h1>Super Product</h1>
             <ProductCard 
             name="Nokia" 
             price="1239$" 
@@ -11,4 +12,4 @@ export default function SuperProduct() {
         
         </div>
     )
-}
+} 
