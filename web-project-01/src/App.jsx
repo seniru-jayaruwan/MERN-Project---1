@@ -1,15 +1,17 @@
 import './App.css'
 import ProductCard from './components/productCard'
 import SuperProduct from './components/superProduct'
+import HomePage from './pages/homePage';
+import LoginPage from './pages/loginPage';
+import Registration from './pages/registerPage';
 
 function App() {
   return (
-    <div className='w-full h-screen bg-red-300'>
-      <div className='w-[600px] h-[900px] bg-black flex flex-col justify-center items-center '>
-        
-      </div>
+    <BrowserRouter>
+    <div className='w-full h-screen'>
+      <div></div>
     </div>
-
+  </BrowserRouter>
   );
 }
 export default App
