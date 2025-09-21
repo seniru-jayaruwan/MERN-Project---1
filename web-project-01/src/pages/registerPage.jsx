@@ -1,4 +1,4 @@
-export default function Registration(params) {
+export default function Registration() {
     return(
         <div>
             <span>Register Page</span>

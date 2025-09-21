@@ -1,4 +1,4 @@
-export default function HomePage(params) {
+export default function HomePage() {
     return(
         <div>
             <span>Home Page</span>
