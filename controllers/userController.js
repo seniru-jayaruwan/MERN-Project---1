@@ -62,7 +62,9 @@ export function createuser(req,res){
                 )
                 res.json({
                     token : token,
-                    message : "Login succesful"
+                    message : "Login succesful",
+                    role : user.role,
+                    
                 })
             }else{
                 res.status(403).json({
