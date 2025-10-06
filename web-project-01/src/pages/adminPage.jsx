@@ -4,6 +4,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaUserFriends } from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
 import ProductsAdminPage from "./admin/productsAdminPage";
+import AddProductAdminPage from "./admin/addProductAsdminPage";
 export default function AdminPage() {
     return(
         <div className="w-full h-screen flex bg-gray-300">
@@ -19,7 +20,8 @@ export default function AdminPage() {
             <div className="w-[calc(100%-300px)] h-full">
                 <Routes path="/">
                     <Route path="/" element={<h1>Dashboard</h1>}/>
-                    <Route path="/products" element={<ProductsAdminPage   />}/>
+                    <Route path="/products" element={<ProductsAdminPage/>}/>
+                    <Route path="/newProduct" element={<AddProductAdminPage/>}/>
                     <Route path="/orders" element={<h1>Orders</h1>}/>
                 </Routes>
             </div>
