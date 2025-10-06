@@ -19,7 +19,7 @@ export default function AddProductAdminPage() {
         const productData ={
             productId:productId,
             productName:productName,
-            alternativeName:alternativeName,
+            alternativeName:altNamesInArray,
             labledPrice:labledPrice,
             price:price,
             Images:[],
