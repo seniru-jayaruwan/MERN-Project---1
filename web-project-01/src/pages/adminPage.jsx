@@ -8,7 +8,7 @@ import AddProductAdminPage from "./admin/addProductAsdminPage";
 export default function AdminPage() {
     return(
         <div className="w-full h-screen flex bg-gray-300">
-            <div className="w-[300px] h-full flex flex-col items-center bg-blue-300"> 
+            <div className="w-[300px] h-full flex flex-col items-center bg-blue-500"> 
                 <span className="text-3xl font-bold my-5">Admin Page</span>
             <Link className="flex flex-row h-[60px] w-full items-center text-xl text-black-500 gap-[7px] p-[20px]  hover:bg-gray-700 hover:text-amber-50 rounded-l-3xl" to={"/admin/products"}><FaBagShopping/>Products</Link>
             <Link className="flex flex-row h-[60px] w-full items-center text-xl text-black-500 gap-[7px] p-[20px]  hover:bg-gray-700 hover:text-amber-50 rounded-l-3xl" to={"/admin/orders"}><FaShoppingCart />Orders</Link>
